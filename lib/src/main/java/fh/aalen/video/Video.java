@@ -18,6 +18,7 @@ public class Video {
 	private String ageRating;
 	private String description;
 	private String genre;
+	private String test;
 	
 	@ManyToMany(mappedBy="favouriteVideos")
 	@JsonIgnore
