@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+
+    <link rel="stylesheet" href="css/zuweisung.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+    <title>Zuweisung</title>
+  </head>
+  <body>
+    <div class="tabellenWrapper">
+        <form method="get" action="index.html">
+          <button class="btn home"></a><i class="fa fa-home"></i></button>
+        </form>
+      <div class="obenWrapper">
+        <div class="column">
+        <h1>Athlete</h1>
+        <table id="athletetable" class="display" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Vorname</td>
+              <td>Nachname</td>
+              <td>Geschlecht</td>
+              <td>Groesse</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+        <div class="column">
+          <h1>Training</h1>
+          <table id="trainingtable" class="display" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <td>TNr</td>
+                <td>Bezeichnung</td>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="column">
+           <h1>Zuweisung</h1>
+            <form class="formStyle">
+                <label>Trainingsdatum:</label><br />
+                <input type="date" name="date" required="required" /><br />
+                <label>Startzeit:</label><br />
+                <input type="time" name="startTime" required="required" /><br />
+                <label>Endzeit:</label><br />
+                <input type="time" name="endTime" required="required" /><br />
+                <label>Gewicht in kg:</label><br />
+                <input type="text" name="weight" required="required" /><br />
+              </form>
+              <div class="zuweisenbutton">
+                  <button class="button" id="zuweisenButton" >Sportler zuweisen</button>
+                </div>
+            </div>
+      </div>
+
+      <div class="untenWrapper">
+        <table id="zuweisungtable" class="display" cellspacing="0" width="100%"
+        >
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Vorname</td>
+              <td>Nachname</td>
+              <td>Geschlecht</td>
+              <td>Groesse</td>
+              <td>TNr</td>
+              <td>Beschreibung</td>
+              <td>Trainingsdatum</td>
+              <td>Startzeit</td>
+              <td>Endzeit</td>
+              <td>Gewicht in kg</td>
+            </tr>
+          </thead>
+
+        </table>
+      </div>
+    </div>
+    	<script type="text/javascript" src="js/ajaxfunctions3.js"></script>
+
+  </body>
+</html>

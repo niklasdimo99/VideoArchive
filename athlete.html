@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>    
+  <title>Titel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/ajaxfunctions.js"></script>
+
+  </head>
+  <body>
+  <div class="centerdiv">
+    <h1>My Athlete</h1>
+    <section class="left">
+          <a href="index.html"><button class="btn btn1">home</button></a>
+    <p>
+    <button id="loadtable">Load</button>
+      
+  	<div class="tab tab-2">
+                <form id="newAthlete">
+					
+					<label>Name:</label><br>
+					<input type="text" name="name" required="required" ><br>
+					
+					<label>Height:</label><br>
+					<input type="text" name="height" required="required" ><br>
+					
+					<label>Gender:</label><br>
+					<input type="text" name="gender" required="required" ><br>
+					
+					<input type="submit" id="newAthleteButton">
+				</form>
+                <button id="editAthlete">>Edit</button>
+                <button id="removeAthlete">>Remove</button>
+    </div>
+    <table id="athletetable" class="display" cellspacing="0" width="100%">
+	    <thead>
+		    <tr>
+			    <th>ID</th>
+			    <th>Name</th>
+			    <th>Height</th>
+			    <th>Gender</th>
+		    </tr>
+	    </thead>
+    </table>
+    </p>
+  </section>
+  <footer>Copyright (c) - 2021 by Niklas Dimoski, Marcus Bilo, Mahir Berkcan!</footer>
+  </div>
+
+  </body>
+</html>
